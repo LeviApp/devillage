@@ -1,1 +1,24 @@
 @import 'carbon-components/scss/globals/scss/styles.scss';
+
+
+
+#link1:focus span {
+    background: chocolate
+}
+
+#link1 span {
+    font-size: 1.5rem
+}
+
+#link2 span {
+    font-size: 1.5rem
+}
+
+
+#link1:focus span {
+    background: chocolate
+}
+
+.bx--side-nav__link--current {
+    background: chocolate
+}

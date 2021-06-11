@@ -20,9 +20,9 @@ function SidePane() {
       isChildOfHeader={false}
       aria-label="Side navigation">
 
-<SideNavItems>
-        <SideNavLink href="javascript:void(0)">Users</SideNavLink>
-        <SideNavLink href="javascript:void(0)">Posts</SideNavLink>
+        <SideNavItems>
+        <SideNavLink id="link1" onClick={() => {return false}} href="/users">Users</SideNavLink>
+        <SideNavLink id="link2" onClick={() => {return false}} href="/posts">Posts</SideNavLink>
       </SideNavItems>
       </SideNav>
 

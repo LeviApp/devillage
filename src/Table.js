@@ -10,7 +10,7 @@ import { Dropdown } from 'primereact/dropdown';
 import { InputText } from 'primereact/inputtext';
 import { classNames } from 'primereact/utils';
 
-import 'primereact/resources/themes/saga-orange/theme.css';
+import 'primereact/resources/themes/luna-amber/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import React, {useState, useEffect} from 'react';
@@ -99,7 +99,7 @@ const imageBodyTemplate = (rowData) => {
     }, [])
 
   return (
-    <div className="App">
+    <div className="user_table">
         <DataTable value={users} reorderableColumns >
             <Column field='picture' body={imageBodyTemplate}></Column>
             <Column field='title' header='Title' sortable filter></Column>
