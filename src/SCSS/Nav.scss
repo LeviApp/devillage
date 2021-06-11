@@ -1,0 +1,13 @@
+nav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    left: 250px;
+    top: 0px;
+    z-index: 10;
+    background-color: white;
+    padding: 20px;
+    img {
+        width: 20%;
+    }
+}
