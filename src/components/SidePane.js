@@ -21,8 +21,8 @@ function SidePane() {
       aria-label="Side navigation">
 
         <SideNavItems>
-        <SideNavLink id="link1" onClick={() => {return false}} href="/users">Users</SideNavLink>
-        <SideNavLink id="link2" onClick={() => {return false}} href="/posts">Posts</SideNavLink>
+        <SideNavLink id="link1"  href="/users">Users</SideNavLink>
+        <SideNavLink id="link2" href="/posts">Posts</SideNavLink>
       </SideNavItems>
       </SideNav>
 
