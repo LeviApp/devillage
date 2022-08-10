@@ -3,7 +3,7 @@ import logo from '../assets/img/deVillageLogo.png'
 import '../SCSS/Nav.scss'
 function Nav() {
     return (
-        <nav class='nav'>
+        <nav className='nav'>
             <img src={logo}></img>
             <section>
                 {/* <NavLink activeClassName="selected" className='navlink' to="/quotes">

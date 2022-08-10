@@ -14,6 +14,8 @@ import React, {useState, useEffect} from 'react';
 
 function Posts() {
 
+    const [loading, setLoading] = useState(true)
+    const [posts, setPosts] = useState([])
     const [currentPage, setcurrentPage] = useState(0)
     const [pageLimit, setpageLimit] = useState(10)
 
@@ -21,11 +23,13 @@ function Posts() {
         return <img src={rowData.picture} onError={(e) => e.target.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} alt={rowData.image} className="product-image" />;
     }
         useEffect(() => {
+            console.log('in the effect')
             fetch(`https://dummyapi.io/data/api/post?page=${currentPage}&limit=${pageLimit}`, {headers: { 
                 'Content-Type': 'application/json',
                 "app-id":'60c193c9f9fa411ce2bab96d'
               }})
             .then(response => {
+                console.log(response, 'is the response')
                 return response.json()
             }
                 )
@@ -39,7 +43,15 @@ function Posts() {
         }, [])
     return (
         <div>
-            
+            <h1>Hell0</h1>
+            {/* <DataTable value={posts} reorderableColumns >
+                    <Column field='picture' body={imageBodyTemplate}></Column>
+                    <Column field='title' header='Title' sortable filter></Column>
+                    <Column field='firstName' header='First Name' sortable filter></Column>
+                    <Column field='lastName' header='Last Name' sortable filter></Column>
+                    <Column field='email' header='Email' sortable filter></Column>
+                    <Column field='id' header='Id' sortable filter></Column>
+            </DataTable> */}
         </div>
     )
 }
